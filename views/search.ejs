@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <% search.forEach(function(searchoptions){ %>
+       <p><%= searchoptions.Title %></p>
+       <p><%= searchoptions.Year %></p>
+       <p><%= searchoptions.Type %></p>
+       <p> <img src="<%= searchoptions.Poster %>"></p>
+    <% }) %>    
+</body>
+</html>
